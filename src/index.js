@@ -5,14 +5,20 @@ import * as walk from 'acorn/dist/walk'
 
 export default class Bundler {
   constructor(input, { inputFileSystem = fs } = {}) {
-    this.input = input
+    this.input = path.resolve(input)
     this.inputFileSystem = inputFileSystem
   }
 
   async bundle() {
+    const root = {
+      path: this.input,
+      content: await this.readFile(this.input)
+    }
+
     this.tree = {
-      ...this.input,
-      assets: await this.getAssets(this.input)
+      ...root,
+      isRoot: true,
+      assets: await this.getAssets(root)
     }
   }
 

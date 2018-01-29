@@ -5,13 +5,35 @@ Object {
   "assets": Array [
     Object {
       "assets": Array [],
+      "content": "export default 'foo'
+",
+      "importNames": Array [
+        Object {
+          "imported": "default",
+          "local": "foo",
+        },
+      ],
+      "importPath": "./foo",
       "path": "/$ownDir/test/fixtures/simple/foo",
     },
     Object {
       "assets": Array [],
+      "content": "export default 'bar'
+",
+      "importNames": Array [
+        Object {
+          "imported": "bar",
+          "local": "bar",
+        },
+      ],
+      "importPath": "./nest/bar",
       "path": "/$ownDir/test/fixtures/simple/nest/bar",
     },
   ],
+  "content": "import foo from './foo'
+import { bar } from './nest/bar'
+",
+  "isRoot": true,
   "path": "/$ownDir/test/fixtures/simple/input.js",
 }
 `;
