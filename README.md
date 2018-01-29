@@ -3,7 +3,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/pocky.svg?style=flat)](https://npmjs.com/package/pocky) [![NPM downloads](https://img.shields.io/npm/dm/pocky.svg?style=flat)](https://npmjs.com/package/pocky) [![CircleCI](https://circleci.com/gh/pocky-bundler/pocky/tree/master.svg?style=shield)](https://circleci.com/gh/pocky-bundler/pocky/tree/master)  [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/egoist/donate) [![chat](https://img.shields.io/badge/chat-on%20discord-7289DA.svg?style=flat)](https://chat.egoist.moe)
 
-_WIP, a bundler for browser and node.js_
+_WIP, a bundler that runs in browser and node.js_
 
 ## Contributing
 
