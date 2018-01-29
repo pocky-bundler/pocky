@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`assets 1`] = `
+Object {
+  "assets": Array [
+    Object {
+      "assets": Array [],
+      "path": "/$ownDir/test/fixtures/simple/foo",
+    },
+    Object {
+      "assets": Array [],
+      "path": "/$ownDir/test/fixtures/simple/nest/bar",
+    },
+  ],
+  "path": "/$ownDir/test/fixtures/simple/input.js",
+}
+`;

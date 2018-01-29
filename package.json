@@ -1,0 +1,42 @@
+{
+  "name": "pocky",
+  "version": "0.0.0",
+  "description": "A bundler for browser and node.js",
+  "repository": {
+    "url": "egoist/pocky",
+    "type": "git"
+  },
+  "main": "dist/pocky.cjs.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "npm run lint && jest",
+    "lint": "xo",
+    "prepublishOnly": "npm run build",
+    "build": "bili",
+    "postinstall": "node -e \"console.log('\\u001b[35m\\u001b[1mLove pocky? You can now donate to support the author:\\u001b[22m\\u001b[39m\\n> \\u001b[34mhttps://patreon.com/egoist\\u001b[0m')\""
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "acorn": "^5.3.0",
+    "memory-fs": "^0.4.1"
+  },
+  "devDependencies": {
+    "babel-jest": "^22.1.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "bili": "^2.2.6",
+    "eslint-config-rem": "^3.0.0",
+    "jest-cli": "^22.1.4",
+    "xo": "^0.18.0"
+  },
+  "xo": {
+    "extends": "rem",
+    "envs": ["jest"]
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
